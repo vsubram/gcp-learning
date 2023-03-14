@@ -5,5 +5,5 @@ resource local_file name1 {
 }
 
 resource random_string name2 {
-  length  = 10
+  length  = 12
 }

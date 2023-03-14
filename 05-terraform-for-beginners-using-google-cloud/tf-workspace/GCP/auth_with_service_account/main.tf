@@ -9,14 +9,15 @@ terraform {
 
 provider "google" {
   # Configuration options
-  project = "terraform-gcp-326702"
-  region = "us-central1"
-  zone = "us-central1-a"
-  credentials = "keys.json"
+  project = "automate-etl-pipelines"
+  region = "us-east1"
+  zone = "us-east1-a"
+  credentials = "automate-etl-pipelines-sa-keys.json"
 }
 
-resource google_storage_bucket "GCS1"{
-  name = "bucket-from-tf-using-sa"
+resource google_storage_bucket "vish-gcp-sa-test"{
+  name = "automate-etl-pipelines-using-sa"
+  location = "us"
 }
 
 

@@ -2,28 +2,20 @@ terraform {
   required_providers {
     google = {
       source = "hashicorp/google"
-      version = "3.85.0"
+      version = "4.57.0"
     }
   }
 }
 
 provider "google" {
   # Configuration options
-  project = "terraform-gcp-326702"
-  region = "us-central1"
-  zone = "us-central1-a"
+  project = "automate-etl-pipelines"
+  region = "us-east1"
+  zone = "us-east1-a"
 }
 
-resource google_storage_bucket "GCS1"{
-  name = "bucket-from-tf-up"
+resource google_storage_bucket "vish-gcp-test" {
+  # Created using username and password
+  name = "automate-etl-pipelines-up"
+  location = "us"
 }
-
-
-
-
-
-
-
-
-
-

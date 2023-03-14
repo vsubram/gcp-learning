@@ -3,6 +3,5 @@ data local_file foo {
 }
 
 output name1 {
-  value       = data.local_file.foo.content
+  value = data.local_file.foo.content
 }
-

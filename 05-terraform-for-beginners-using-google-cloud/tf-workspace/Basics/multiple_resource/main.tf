@@ -5,5 +5,5 @@ resource local_file cat_res {
 
 resource local_file dog_res {
   filename = "dog.txt"
-  content = "I Love Dogs"
+  content = "I Love Dogs more :)"
 }

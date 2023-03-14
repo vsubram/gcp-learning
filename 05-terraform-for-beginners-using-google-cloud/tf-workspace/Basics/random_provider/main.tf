@@ -4,14 +4,14 @@ resource random_integer rint{
 }
 
 resource random_string rstring {
-  length  = 15
+  length = 15
 }
 
 
 output name1 {
-  value       = random_integer.rint.result
+  value = random_integer.rint.result
 }
 
 output name2 {
-  value       = random_string.rstring.result
+  value = random_string.rstring.result
 }
